@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- link to G FONTS (Antonio- reg 400,med 500 semi bold 600, bold 700) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- font awesome link (my own Kit)-->
+  <script src="https://kit.fontawesome.com/6330e70a88.js" crossorigin="anonymous"></script>
+
+<!-- link to CSS3 -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Password Generator</title>
+</head>
+<body>
+<!-- #container for shorthand for div -->
+  <div id="container">
+        <h2>Password Generator</h2>
+        <!-- section#result-container shorthand -->
+        <section id="result-container">
+            <!-- this span is were the password will be displayed -->
+            <span id="result"></span>
+
+          <!-- button.btn#clipboard -->
+            <button class="btn" id="clipboard">
+      <!-- Font Awesome Icon -->
+      <i class="fa-solid fa-code"></i>
+            </button>
+          </section>
+
+    <!-- OPTIONS SECTION -->
+<!-- 1 -->
+    <section id="option">
+      <div class="option">
+        <label for="lowercase">Lowercase Letters</label>
+        <input type="checkbox" id="lowercase" checked>
+      </div>
+<!-- 2 -->
+      <div class="option">
+        <label for="uppercase">Uppercase Letters</label>
+        <input type="checkbox" id="uppercase" checked>
+      </div>
+<!-- 3 -->
+      <div class="option">
+        <label for="numbers">Numbers</label>
+        <input type="checkbox" id="numbers" checked>
+      </div>
+<!-- 4 -->
+      <div class="option">
+        <label for="symbols">Symbols</label>
+        <input type="checkbox" id="symbols" checked>
+      </div>
+<!-- 5 -->
+      <div class="option">
+        <label for="length">Length</label>
+        <!-- Value is the starting/default number.Also, min /max  -->
+        <input type="number" id="length" value="10" min="4" max="20" >
+      </div>
+    </section>
+    <button class="btn" id="generate">Generate Password</button>
+  </div>
+
+
+
+
+
+  <!-- link to JS File -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* star Selector (Selects every element in the HTML file) */
+*{
+    /* Includes the padding and border when setting a width or height for an element */
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgba(150, 4, 4, 0.993);
+    color: rgb(229, 241, 50);
+    /* Flexbox is used here to center the div with the id of "container" vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* Setting the height to 100vh so the div will be centered vertically in the browser window (AKA Viewport) */
+    height: 100vh;
+/* Adding padding to the body element so the div container is NOT right up against the edge of the viewport on smaller screen sizes */
+    padding: 25px;
+}
+
+
+h2 {
+    /* Top [Right/Left] Bottom */
+    margin: 10px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/* to select a class use a  (.)period to define  */
+.btn {
+    background-color: rgb(160, 98, 41);
+    /* Removes the default button border */
+    border: none;
+    /* Buttons do NOT inherit text color. Must apply a new text color directly to the element. */
+    color:rgb(229, 241, 50);
+
+    /* Changes the cursor when hovering over a button */
+    /* pointer is a hand-gloved */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    /* figure out why it stop working ? */
+    /* spelling was the issue */
+    margin: 15px 0;
+
+}
+
+#container {
+    background-color: rgb(92, 17, 17);
+    padding: 15px;
+    width: 350px;
+    border-radius: 30px;
+
+}
+
+#result-container {
+    background-color: black;
+    height:50px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 10px 5px 10px 10px;
+    /* flex used to position the span and the button elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#clipboard {
+    font-size: 18px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+}
